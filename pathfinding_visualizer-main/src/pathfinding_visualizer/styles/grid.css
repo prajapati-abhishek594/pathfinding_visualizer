@@ -1,0 +1,174 @@
+/* Container for the grid */
+.grid-container {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  background-color: #e9ecef; 
+}
+
+/* Grid styling */
+.grid {
+  flex-direction: column;
+  gap: 0;
+  margin: 10px;
+  background-color: #ffffff; 
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Grid row styling */
+.grid-row {
+  display: flex;
+  gap: 0;
+}
+
+/* Node styling */
+.node {
+  width: 22px; 
+  height: 22px; 
+  border: 1px solid #676764;
+  box-sizing: border-box;
+  display: inline-block;
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s; 
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  border-radius: 4px; 
+}
+
+/* Start node styling */
+.node-start {
+  background-color: #4caf50; 
+  border: 2px solid #388e3c; 
+}
+
+/* Target node styling */
+.node-target {
+  background-color: #dc3545; 
+  border: 2px solid #d32f2f; 
+}
+
+/* Wall node styling */
+.node-wall {
+  background-color: #0c3547; 
+  border: 2px solid #08303a; 
+}
+
+/* Visited node styling */
+.node-visited {
+  animation: visitedAnimation 1.5s ease-out forwards;
+}
+
+@keyframes visitedAnimation {
+  0% {
+    transform: scale(0.3);
+    background-color: rgba(173, 216, 230, 0.75);
+    border-radius: 50%;
+  }
+  25% {
+    background-color: rgba(135, 206, 250, 0.75); 
+  }
+  50% {
+    transform: scale(1.2);
+    background-color: rgba(144, 238, 144, 0.75);
+  }
+  75% {
+    background-color: rgba(255, 255, 224, 0.75); 
+  }
+  100% {
+    transform: scale(1);
+    background-color: rgba(255, 229, 204, 0.9); 
+  }
+}
+
+/* Shortest path node styling */
+.node-shortest-path {
+  animation: shortestPath 2s ease-in-out forwards;
+}
+
+@keyframes shortestPath {
+  0% {
+    transform: scale(0.6);
+    background-color: rgb(255, 223, 186);
+  }
+  25% {
+    transform: scale(0.8);
+    background-color: rgb(255, 215, 0); 
+  }
+  50% {
+    transform: scale(1.2);
+    background-color: rgb(255, 193, 7); 
+  }
+  75% {
+    transform: scale(1.4);
+    background-color: rgb(255, 165, 0); 
+  }
+  100% {
+    transform: scale(1);
+    background-color: rgb(255, 140, 0); 
+  }
+}
+
+
+/* Hover effect for nodes */
+.node:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transform: translateY(-2px); 
+}
+
+/* Additional styles for better UI */
+.grid-row {
+  justify-content: center; 
+}
+
+.node {
+  transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s, border 0.3s; /* Smooth transition for border */
+}
+
+.node:active {
+  transform: scale(0.95); 
+}
+
+
+/* Controls */
+
+.controls {
+  text-align: center;
+}
+
+.control-button-green {
+  padding: 12px;
+  background-color: #4caf50; 
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin: 4px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.control-button-green:hover {
+  background-color: #45a049;
+  transform: scale(1.05);
+}
+
+.control-button-red {
+  padding: 12px;
+  background-color: #dc3545; 
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.control-button-red:hover {
+  background-color: #c82333;
+  transform: scale(1.05);
+}
