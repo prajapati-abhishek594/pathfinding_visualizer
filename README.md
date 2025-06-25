@@ -9,16 +9,16 @@ This project helps understand the logic of famous algorithms using an animated g
 ## 🖼️ Project Demo UI
 
 ### Starting Main Page
-(./public/screenshots/starting_main_page.png)
+![Main Page](./screenshots/starting-main-page.png)
 
 ### Dijstra Algorithm
-(./public/screenshots/dijstra_algorithm.png)
+![Dijstra algorithm](./screenshots/dijstra-algorithm.png)
 
 ### Breadth First Search Algorithm
-(./public/screenshots/breadth_first_search_algorithm.png)
+![breadth first search algorithm](./screenshots/breadth-first-search-algorithm.png)
 
 ### A* Algorithm
-(./public/screenshots/A_star_algorithm.png)
+![A* algorithm](./screenshots/A-star-algorithm.png)
 
 ---
 
@@ -43,7 +43,7 @@ This project helps understand the logic of famous algorithms using an animated g
 ```
 pathfinding_visualizer-main/
 ├── public/
-│   └── index.html, icons, manifest,screenshots,....
+│   └── index.html, icons, manifest,....
 ├── src/
 │   ├── App.js                  # UI and user controls
 │   ├── index.js                # Entry point
@@ -57,8 +57,9 @@ pathfinding_visualizer-main/
 │   │   ├── dfs.js
 │   └── maze generation/
 │       └── prims_maze.js       # Prim’s Maze Generator
-├── package.json
+├── screenshots
 └── README.md
+
 ```
 
 ---
