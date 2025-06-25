@@ -9,16 +9,16 @@ This project helps understand the logic of famous algorithms using an animated g
 ## 🖼️ Project Demo UI
 
 ### Starting Main Page
-![Visualizer Screenshot](./public/screenshots/starting_main_page.png)
+(./public/screenshots/starting_main_page.png)
 
 ### Dijstra Algorithm
-![Visualizer Screenshot](./public/screenshots/dijstra_algorithm)
+(./public/screenshots/dijstra_algorithm.png)
 
 ### Breadth First Search Algorithm
-![Visulaizer Screenshot](./public/screenshots/breadth_first_search_algorithm)
+(./public/screenshots/breadth_first_search_algorithm.png)
 
 ### A* Algorithm
-![Visulaizer Screenshot](./public/screenshots/A_star_algorithm)
+(./public/screenshots/A_star_algorithm.png)
 
 ---
 
